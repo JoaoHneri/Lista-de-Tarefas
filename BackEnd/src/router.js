@@ -8,5 +8,6 @@ router.get('/tarefas', tarefasController.getAll);
 router.post('/tarefas', tarefasMiddlewares.ValidateBody, tarefasController.createTarefa);
 router.delete('/tarefas/:id', tarefasController.deleteTarefa);
 router.put('/tarefas/:id',tarefasMiddlewares.ValidateBody,tarefasMiddlewares.ValidateStatus, tarefasController.updateTarefa);
+router.get('/tarefas/:id', tarefasController.getIdTarefa);
 
 module.exports = router;

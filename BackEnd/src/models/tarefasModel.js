@@ -25,11 +25,15 @@ const updateTarefa = async (id, task)=>{
     return removedTarefa;
 };
 
-
+const getIdTarefa = async (id)=>{
+    const [tarefas] = await connection.execute('SELECT * FROM tarefas WHERE id = ?', [id]);
+    return tarefas;
+};
 
 module.exports =  {
     getAll,
     createTarefa,
     deleteTarefa,
-    updateTarefa
+    updateTarefa,
+    getIdTarefa
 };

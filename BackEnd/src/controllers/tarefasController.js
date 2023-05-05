@@ -1,5 +1,6 @@
 const tarefasModel = require('../models/tarefasModel');
 const { param } = require('../router');
+
 const getAll = async (req, res)=>{
     const task = await tarefasModel.getAll();
     return res.status(200).json(task)
@@ -19,7 +20,13 @@ const deleteTarefa = async (req, res)=>{
 const updateTarefa = async (req, res)=>{
     const {id} = req.params;
     const task = await tarefasModel.updateTarefa(id, req.body);
-    return res.status(204).json(task)
+    return res.status(201).json(task)
+};
+
+const getIdTarefa = async (req, res)=>{
+    const {id} = req.params;
+    const task = await tarefasModel.getIdTarefa(id);
+    return res.status(200).json(task)
 };
 
 
@@ -29,5 +36,6 @@ module.exports = {
     getAll,
     createTarefa,
     deleteTarefa,
-    updateTarefa
+    updateTarefa,
+    getIdTarefa
 };
