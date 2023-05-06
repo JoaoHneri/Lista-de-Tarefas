@@ -5,6 +5,11 @@
 body{
   background-color: #343434;
 }
+.active {
+  color: #198754 !important;
+  font-weight: bold;
+  border-bottom: 3px solid #198754;
+}
 
 .App-logo {
   height: 40vmin;

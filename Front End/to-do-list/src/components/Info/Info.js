@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Info.css";
 import { Link } from "react-router-dom";
-import { AiOutlineDelete, AiOutlineEdit } from "react-icons/ai";
+import { AiOutlineDelete, AiOutlineEdit, AiOutlineHome } from "react-icons/ai";
 import { useParams } from "react-router-dom";
 import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
@@ -69,6 +69,11 @@ const Info = () => {
             </button>
             <button className="icons" title="Deletar" onClick={deleteTarefas}>
               <AiOutlineDelete className="btn-info-delete" />
+            </button>
+            <button className="icons" title="Home">
+            <Link to={`/`} className="icons">
+              <AiOutlineHome className="btn-info-edit" />
+              </Link>
             </button>
           </p>
           <div className="status">

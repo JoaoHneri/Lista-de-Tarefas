@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "../Info/Info.css";
 import { Link } from "react-router-dom";
-import { AiOutlineCheck } from "react-icons/ai";
+import { AiOutlineCheck, AiOutlineHome } from "react-icons/ai";
 import { useParams } from "react-router-dom";
 import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
@@ -27,7 +27,7 @@ const Editar = () => {
       });
       MySwal.fire({
         title: "Pronto!",
-        text: "Tarefa deletada com sucesso",
+        text: "Tarefa Editada com sucesso",
         icon: "success",
         confirmButtonText: "Ok",
         didOpen: () => {
@@ -39,7 +39,7 @@ const Editar = () => {
     } catch (error) {
       MySwal.fire({
         title: "Erro!",
-        text: "A tarefa não foi deletada com sucesso",
+        text: "A tarefa não foi editada com sucesso",
         icon: "success",
         confirmButtonText: "Ok",
         didOpen: () => {
@@ -79,6 +79,11 @@ const Editar = () => {
           />
           <p className="">
           <button className='button-tarefas' title='Clique para atualizar eata tarefa' onClick={updateTarefas}><AiOutlineCheck className="btn-info-edit" /></button>
+          <button className="icons" title="Home">
+            <Link to={`/`} className="icons">
+              <AiOutlineHome className="btn-info-edit" />
+              </Link>
+              </button>
           </p>
           <div className="status">
             <input

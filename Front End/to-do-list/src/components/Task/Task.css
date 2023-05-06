@@ -8,7 +8,9 @@
 
     
 }
-
+.corpo h1{
+    font-size: 50px;
+}
 .content{
     padding-left: 15px;
     display: flex;
