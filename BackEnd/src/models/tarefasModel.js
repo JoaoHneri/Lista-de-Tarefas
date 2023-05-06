@@ -9,7 +9,7 @@ const createTarefa = async (task)=>{
     const {title, descricao} = task;
     const dateUTC = new Date(Date.now()).toUTCString();
     const query = 'INSERT INTO tarefas (title, status, descricao, data_de_criacao) VALUES (?, ?, ?, ?)'
-    const [createdTarefa] = await connection.execute(query, [title, 'pendente', descricao, dateUTC]);
+    const [createdTarefa] = await connection.execute(query, [title, 'Pendente', descricao, dateUTC]);
     return {insertId: createdTarefa.insertId};
 };
 

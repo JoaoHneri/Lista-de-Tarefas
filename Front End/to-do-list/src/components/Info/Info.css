@@ -1,0 +1,74 @@
+.corpo{
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 30px;
+
+    
+}
+
+.infos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.container{
+    color: aliceblue;
+    display: grid;
+    grid-template-columns: 10fr 2fr;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+
+}
+
+.status{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.btn-info-delete{
+    color: rgb(176, 25, 25);
+    cursor: pointer;
+}
+.btn-info-edit{
+    color: white;
+    
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    
+}
+
+.container input{
+    display: flex;
+    flex-direction: column;
+    border: none;
+    font-size: 1rem;
+    outline: none;
+    padding: 1rem;
+    width: 28.2rem;
+    border-radius: 1rem;
+}
+
+select{
+    gap: 5rem;
+    border: none;
+    font-size: 1rem;
+    outline: none;
+    padding: 1rem;
+    width:15rem;
+    border-radius: 1rem;
+}
+
+.input-select{
+    margin-top: 1rem;
+}

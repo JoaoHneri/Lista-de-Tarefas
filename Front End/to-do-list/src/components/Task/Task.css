@@ -1,0 +1,114 @@
+.corpo{
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 30px;
+
+    
+}
+
+.content{
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+}
+
+.add-tarefa{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.input-tarefas, .button-tarefas{
+    border: none;
+    font-size: 1rem;
+    outline: none;
+    padding: 1rem;
+
+}
+
+.input-tarefas{
+    width: 20rem;
+    border-radius: 1rem;
+}
+.Form-Inputs input{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.button-tarefas{
+    background-color: rgb(0, 183, 9);
+    color: aliceblue;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.button-tarefas:hover{
+    background-color: rgb(0, 117, 6);
+    
+}
+.btn-info-pend{
+    color: yellow;
+}
+.btn-info-conclud{
+    color: green;
+}
+
+.info-pend{
+    border-bottom: 3px solid yellow;
+    border-left: 5px solid yellow;
+}
+.info-conclud{
+    border-bottom: 3px solid green;
+    border-left: 5px solid green;
+}
+
+.btn-info-delete{
+    color: rgb(176, 25, 25);
+    cursor: pointer;
+}
+.btn-info-edit{
+    color: white;
+    
+}
+.to-do-list{
+    padding: 0;
+    
+}
+
+.to-do-list li{
+    list-style-type:none;
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10px;
+    border-radius: 30px;
+    padding: 0px 10px;
+}
+
+
+.to-do-list button{
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+}
+
+.row{
+    border: 1px solid green;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 10px;
+} 
