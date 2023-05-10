@@ -77,7 +77,7 @@ const Info = () => {
             </button>
           </p>
           <div className="status">
-            <p>Descrição: {data.descricao}.</p>
+            <p>Descrição: {data.descricao}</p>
             <div>
               <p>Status: {data.status}</p>
               <p>Data de Criação: {data.data_de_criacao}</p>
